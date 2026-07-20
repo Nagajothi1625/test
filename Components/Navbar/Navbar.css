@@ -1,0 +1,137 @@
+ .navbar-right{
+   
+  display: flex;
+  gap: 2px;
+  justify-content: space-evenly;
+  align-items: center;
+ }
+
+.navbar .logo{
+    width: 190px;
+ }
+
+ .navbar button{
+  background: transparent;
+  font-size: 16px;
+  color: rgb(250, 251, 252);
+  border: 1px solid rgb(33, 221, 33);
+  padding: 10px 30px;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: 0.3ms;
+ }
+
+ .navbar button:hover{
+    background-color: aquamarine;
+ }
+  .navbar-brand{
+    color: aliceblue;
+  }
+
+  .navbar .li{
+
+    cursor: pointer;
+  } 
+
+.navbar .navbar-menu{
+    display:flex;
+    list-style: none;
+    gap: 30px;
+    color: rgb(193, 201, 198);
+    font-size:  18px;
+    font-weight: 500;
+}
+.carousel-item img {
+  height: 70vh;   /* 50% of screen height */
+  object-fit: cover;
+}
+.search-btn {
+  border: none;   
+  padding: 2px;
+  border-radius: 5px;
+  cursor: pointer;
+  max-width: 10%;
+  height: auto;
+ 
+}
+
+.search_icon{
+  position: relative;
+  padding: 2px;
+  border-radius: 5px;
+  cursor: pointer;
+   max-width: 60px;
+  height: auto;
+}
+
+.search_icon .dot{
+
+  position: absolute;
+  min-width: 15px;
+  min-height: 15px;
+  background-color: brown;
+  border-radius: 5px;
+  top: -5px;
+  right: -8px;
+  cursor: pointer;
+}
+
+
+ 
+.form{
+    color:rgb(10, 17, 16);
+    background-color: rgb(7, 93, 77);
+    
+}
+
+label {
+  color:rgb(195, 193, 217);
+}
+ 
+h2,p {
+  color:rgb(223, 232, 234);
+  text-align: center;
+  
+}
+
+.welcome-text{
+
+  color: white;
+}
+.search-box {
+  position: relative;
+}
+
+.search-box input {
+    width: 250px;
+    padding: 8px 12px;
+    border-radius: 20px;
+    border: 1px solid #ccc;
+}
+
+.search-results {
+    position: absolute;
+    background: red;
+    top: 70%;
+    left: 10;
+    width: 50%;
+    background: white;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    max-height: 300px;
+    overflow-y: auto;
+    z-index: 9999;
+}
+
+.search-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 10px;
+    text-decoration: none;
+    color: black;
+}
+
+.search-item:hover {
+    background: #f5f5f5;
+}
