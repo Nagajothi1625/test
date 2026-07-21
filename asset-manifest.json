@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/test/static/css/main.d8c9db8f.css",
+    "main.js": "/test/static/js/main.c558aa8c.js",
+    "static/js/453.990de096.chunk.js": "/test/static/js/453.990de096.chunk.js",
+    "static/media/ice-cream.webp": "/test/static/media/ice-cream.45d2b07c6a4db810224b.webp",
+    "static/media/Medu-vada.jpg.webp": "/test/static/media/Medu-vada.jpg.f0ca2d545d14dd8fd2d1.webp",
+    "static/media/mixed-vegtable-curry.jpg": "/test/static/media/mixed-vegtable-curry.26aa2f2bc14486cfec06.jpg",
+    "static/media/fish_biriyani.webp": "/test/static/media/fish_biriyani.343b924dd34000ecb648.webp",
+    "static/media/Crab_Lollipop.webp": "/test/static/media/Crab_Lollipop.6556ca1243892f7d4690.webp",
+    "static/media/Chicken_biriyani.jpg": "/test/static/media/Chicken_biriyani.2dddf27de0f6ed1d37be.jpg",
+    "static/media/veg-rice.jpg": "/test/static/media/veg-rice.f43068fa0b15cd893f65.jpg",
+    "static/media/fish_lollipop.webp": "/test/static/media/fish_lollipop.9e3ea7d0aaaf96c520e2.webp",
+    "index.html": "/test/index.html",
+    "main.d8c9db8f.css.map": "/test/static/css/main.d8c9db8f.css.map",
+    "main.c558aa8c.js.map": "/test/static/js/main.c558aa8c.js.map",
+    "453.990de096.chunk.js.map": "/test/static/js/453.990de096.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.d8c9db8f.css",
+    "static/js/main.c558aa8c.js"
+  ]
+}
