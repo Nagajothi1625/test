@@ -1,0 +1,115 @@
+.food-item{
+
+    width: 100%;
+    
+    border-radius: 1%;
+    /* box-shadow: 0px 2px 2px rgb(106, 211, 162);  */
+     overflow: hidden;
+    background: #fff;
+    transition: 0.50ms;
+    animation: fadeIn 0.15ms;
+
+}
+
+.food-item-image{
+     width: 100%;
+    height: 220px;
+    object-fit: cover;
+    display: block;
+    margin: 0;
+    border-radius: 15px 15px 0 0;
+}
+     
+.food-item-img-container {
+    position: relative;
+     
+}
+
+.food-item-img-container .add{
+    width: 40px;
+    position: absolute;
+    bottom: 15px;
+    right:15px;
+     height: 40px;
+    cursor: pointer;
+    border-radius: 50%;
+     
+}
+.food-item-img-container button{
+
+    width: 15px;
+    bottom: 15px;
+     gap: 2px;
+     padding: 3px;
+     background-color: rgb(12, 14, 12);
+    
+     border-radius: 50%;
+     color:rgb(236, 220, 220);
+    cursor: pointer;
+     
+} 
+
+.food-item-img-container p{
+ color: #034f1f;
+ 
+}
+
+.item-counter {
+    position: absolute;
+    right: 15px;
+    bottom: 15px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    background: #fff;
+    padding: 6px 10px;
+    border-radius: 30px;
+}
+  
+.item-counter button {
+    width: 28px;
+    height: 28px;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.food-item-info {
+    padding: 15px;
+}
+
+.food-item-info p {
+    margin: 2px 0;
+    font-size: 10px;
+       color:rgb(20, 17, 17)
+       
+}
+
+.food-item-info1 p {
+    margin: 5px 0;
+       color:rgb(20, 17, 17);
+       font-weight: 500;
+       
+}
+@media (max-width:768px){
+
+    .food-item-image{
+        height:150px;
+    }
+
+    .food-item-info p{
+        font-size:8px;
+        color:rgb(20, 17, 17);
+        
+    }
+    .food-item-info1 p{
+        font-size:16px;
+        color:rgb(20, 17, 17);
+         font-weight: 500;
+    }
+
+    .food-item-img-container .add{
+        width:35px;
+        height:35px;
+    }
+}
