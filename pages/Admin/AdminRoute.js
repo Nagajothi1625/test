@@ -4,7 +4,7 @@ const AdminRoute = ({ children }) => {
   const user = JSON.parse(localStorage.getItem("user"));
 
   if (!user) {
-    return <Navigate to="/n" />;
+    return <Navigate to="/" />;
   }
 
   if (user.role?.toUpperCase() !== "ADMIN") {

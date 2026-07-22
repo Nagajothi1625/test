@@ -1,4 +1,4 @@
-import React, { useState, useContext } from 'react'
+import React, { useState, useRef, useContext, useEffect } from 'react'
 import '../Navbar/Navbar.css';
 import { Link,useNavigate } from 'react-router-dom';
 import Order from '../../pages/Cart/Cart';
@@ -11,15 +11,17 @@ const Navbar = () => {
   const [search, setSearch] = useState("");
   const [result, setResult] = useState([]);
   const navigate = useNavigate();
-
-  const handleSearch = (e) => {
-    const value = e.target.value;
-    setSearch(value);
-    if (value.trim() === "") {
-      setResult([]);
-      return;
-    }
+const searchRef = useRef(null);
  
+const handleSearch = (e) => {
+  const value = e.target.value;
+  setSearch(value);
+
+  if (value.trim() === "") {
+    setResult(food_list);
+    return;
+  }
+  
 
   const filtered = food_list.filter(
     (item) =>
@@ -28,14 +30,17 @@ const Navbar = () => {
   );
 
   setResult(filtered);
+  setResult([]);
 };
-
+ 
+  
 const handleFoodClick = (item) => {
   addToCart(item._id); // use _id because your food_list uses _id
-  setSearch("");
-  setResult([]);
-  navigate("/Cart");
+  setSearch(""); 
+    setResult([]);
 };
+  
+ 
 
 return (
   <div className="navbar">
@@ -47,7 +52,7 @@ return (
 
     <ul className="navbar-menu">
       <li><Link to="/">Home</Link></li>
-      <li><Link to="/">About Us</Link></li>
+      <li><Link to="/footer">About Us</Link></li>
  
 
       <li><Link to="/footer">Contact Us</Link></li>
@@ -57,22 +62,24 @@ return (
       )}
     </ul>
     <div className="navbar-right">
-     <div className="search-box">
+     <div className="search-box"  ref={searchRef}>
           <input
             type="text"
             placeholder="Search food..."
             value={search}
             onChange={handleSearch}
+              
           />
 </div>
-{search.trim() !== "" && (
+{result.length != 0 && (
   <div className="search-results">
     {result.length > 0 ? (
       result.map((item) => (
         <div
           key={item._id}
           className="search-item"
-          onClick={() => handleFoodClick(item)}
+           onClick={() => handleFoodClick(item)}
+         
         >
           {item.name}
         </div>
@@ -118,6 +125,6 @@ return (
   </div>
 
 )
-}
+};
 
 export default Navbar;

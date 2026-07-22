@@ -11,6 +11,8 @@ import Cart from './pages/Cart/Cart';
 import Order from './pages/PlaceOrder/PlaceOrder';
 import Header from './Components/Header/Header';
 import Explore_menu from './Components/Explore_Menu/Explore_menu';
+import FoodDisplay from './FoodDisplay/FoodDisplay';
+import MenuPage from './pages/MenuPage/MenuPage';
 import Home from './pages/Home/Home';
  import Footer from './Components/Footer/Footer';
 import { useState } from 'react';
@@ -22,8 +24,7 @@ import Payment from "./pages/Payment/PaymentPage";
 const  App = () => {
   
   const [showLogin, setShowLogin] = useState(false)
-
-   
+const [category, setCategory]=useState("All");
 
   return (
     <>
@@ -37,11 +38,21 @@ const  App = () => {
            
             <Route path="/carousel" element={<Carousel />} ></Route>
             <Route path="/login" element={<LogIn />} ></Route>
-            <Route path="/Explore_Menu" element={<Explore_menu />} ></Route>
+            <Route path="/Explore_Menu" element={
+  <Explore_menu 
+      category={category}
+      setCategory={setCategory}
+  />
+} />
+            <Route path="/FoodDisplay" element={<MenuPage />} />
+            <Route 
+   path="/MenuPage" 
+   element={<MenuPage />} 
+/>
             <Route path="/Order" element={<Order/>}></Route>
             <Route path="/track-order/:id" element={<TrackOrder />} />
            <Route path="/payment/:orderId" element={<Payment />} />
-          
+           
             <Route
                   path="/admin"
                                 element={
