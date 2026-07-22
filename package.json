@@ -1,7 +1,6 @@
 {
   "name": "foodordersystem",
   "version": "0.1.0",
- 
   "private": true,
   "dependencies": {
     "@testing-library/dom": "^10.4.1",
@@ -47,9 +46,8 @@
   "devDependencies": {
     "gh-pages": "^6.3.0"
   },
-
   "repository": {
-  "type": "git",
-  "url": "https://github.com/nagajothi1625/test.git"
-}
+    "type": "git",
+    "url": "https://github.com/nagajothi1625/test.git"
+  }
 }
