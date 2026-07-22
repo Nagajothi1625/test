@@ -1,32 +1,38 @@
 .food-item{
 
     width: 100%;
-    margin:25px;
-    border-radius: 50%;
+    
+    border-radius: 1%;
     /* box-shadow: 0px 2px 2px rgb(106, 211, 162);  */
+     overflow: hidden;
+    background: #fff;
     transition: 0.50ms;
-    animation: fadeIn;
+    animation: fadeIn 0.15ms;
 
 }
 
 .food-item-image{
-    height: 200px;
-    width:200px;
-    border-radius: 10px 10px 5px 5px;
-    margin-left: 30px;
-    margin-bottom: 20px;
-     }
+     width: 100%;
+    height: 220px;
+    object-fit: cover;
+    display: block;
+    margin: 0;
+    border-radius: 15px 15px 0 0;
+}
+     
 .food-item-img-container {
     position: relative;
+     
 }
 
 .food-item-img-container .add{
     width: 40px;
     position: absolute;
     bottom: 15px;
-    right:30px;
+    right:15px;
+     height: 40px;
     cursor: pointer;
-    border-radius: 40%;
+    border-radius: 50%;
      
 }
 .food-item-img-container button{
@@ -35,44 +41,75 @@
     bottom: 15px;
      gap: 2px;
      padding: 3px;
-     background-color: rgb(230, 236, 241);
+     background-color: rgb(12, 14, 12);
     
      border-radius: 50%;
-     color:rgb(49, 4, 4);
+     color:rgb(236, 220, 220);
     cursor: pointer;
      
 } 
 
 .food-item-img-container p{
- color: white;
+ color: #034f1f;
  
 }
 
-.item-counter  {
-   
+.item-counter {
     position: absolute;
-   display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 10px;  
+    right: 15px;
     bottom: 15px;
-    background-color: rgb(61, 133, 89);
-    cursor: pointer;
-     
-    border-radius: 50%;
-     
-    
-} 
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    background: #fff;
+    padding: 6px 10px;
+    border-radius: 30px;
+}
   
-.food-item-info p{
-
-    font-size: 20px;
-    font-weight: 500;
-     
+.item-counter button {
+    width: 28px;
+    height: 28px;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
 }
 
-.food-item-info1 p{
+.food-item-info {
+    padding: 15px;
+}
 
+.food-item-info p {
+    margin: 2px 0;
     font-size: 10px;
-    color:darkgray
+       color:rgb(20, 17, 17)
+       
+}
+
+.food-item-info1 p {
+    margin: 5px 0;
+       color:rgb(20, 17, 17);
+       font-weight: 500;
+       
+}
+@media (max-width:768px){
+
+    .food-item-image{
+        height:150px;
+    }
+
+    .food-item-info p{
+        font-size:8px;
+        color:rgb(20, 17, 17);
+        
+    }
+    .food-item-info1 p{
+        font-size:16px;
+        color:rgb(20, 17, 17);
+         font-weight: 500;
+    }
+
+    .food-item-img-container .add{
+        width:35px;
+        height:35px;
+    }
 }

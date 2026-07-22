@@ -22,13 +22,13 @@ const FoodItem = ({id, name, image, price}) => {
                     <button  onClick={()=>addToCart(id)}>+</button></div>
                 }
             </div>
-            <div className='food-item-info'>
+            <div className='food-item-info1'>
                 <p>{name}</p>
             </div>
-            <div className='food-item-info1'>
+            <div className='food-item-info'>
                 <p>Food provides essential nutrients<br/> for overall health and well being</p>
             </div>
-            <p className='food-item-price'>${price}</p>
+            <div className='food-item-info1'><p>${price}</p></div>
 
 
         </div>

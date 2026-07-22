@@ -15,9 +15,7 @@ const Cart = () => {
   
   return (
     <>
-    <div> <center><button onClick={() => navigate(`/TrackOrder/{orderId}`)}>
-  Track Order
-</button> </center> </div>
+    
     <div className='cart'>
       <div className='cart-items'>
         <div className='cart-item-title'>
