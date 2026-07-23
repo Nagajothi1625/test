@@ -1,7 +1,7 @@
 import React from 'react'
 import './Header.css';
 import FoodDisplay from '../../FoodDisplay/FoodDisplay';
-import Explore_menu from '../Explore_Menu/Explore_menu';
+//import ExploreMenu from '../../../Components/ExploreMenu/ExploreMenu';
 import MenuPage from '../../pages/MenuPage/MenuPage';
 import { Link } from 'react-router-dom';
  

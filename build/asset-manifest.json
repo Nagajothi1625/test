@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/test/static/css/main.f07e54bd.css",
-    "main.js": "/test/static/js/main.51d9db41.js",
+    "main.css": "/test/static/css/main.2a50a221.css",
+    "main.js": "/test/static/js/main.79b52f28.js",
     "static/js/453.990de096.chunk.js": "/test/static/js/453.990de096.chunk.js",
     "static/media/ice-cream.webp": "/test/static/media/ice-cream.45d2b07c6a4db810224b.webp",
     "static/media/Medu-vada.jpg.webp": "/test/static/media/Medu-vada.jpg.f0ca2d545d14dd8fd2d1.webp",
@@ -12,12 +12,12 @@
     "static/media/veg-rice.jpg": "/test/static/media/veg-rice.f43068fa0b15cd893f65.jpg",
     "static/media/fish_lollipop.webp": "/test/static/media/fish_lollipop.9e3ea7d0aaaf96c520e2.webp",
     "index.html": "/test/index.html",
-    "main.f07e54bd.css.map": "/test/static/css/main.f07e54bd.css.map",
-    "main.51d9db41.js.map": "/test/static/js/main.51d9db41.js.map",
+    "main.2a50a221.css.map": "/test/static/css/main.2a50a221.css.map",
+    "main.79b52f28.js.map": "/test/static/js/main.79b52f28.js.map",
     "453.990de096.chunk.js.map": "/test/static/js/453.990de096.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.f07e54bd.css",
-    "static/js/main.51d9db41.js"
+    "static/css/main.2a50a221.css",
+    "static/js/main.79b52f28.js"
   ]
 }

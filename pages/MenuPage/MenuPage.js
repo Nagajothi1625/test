@@ -1,5 +1,5 @@
 import FoodDisplay from "../../FoodDisplay/FoodDisplay";
-import Explore_menu from "../../Components/Explore_Menu/Explore_menu";
+import Explore_menu from "../../Components/Explore_Menu/ExploreMenu";
  import { useState } from "react";
 
 const MenuPage = () => {
