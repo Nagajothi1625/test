@@ -1,6 +1,6 @@
 
 .header{
-    height: 40vw;
+    height: 45vw;
     margin: 30px auto;
     background: url('https://static.vecteezy.com/system/resources/previews/031/281/930/large_2x/indian-food-dishes-in-a-bowl-ai-generated-free-photo.jpg') no-repeat;
     background-size: cover;
@@ -13,8 +13,9 @@
     flex-direction: column;
     align-items: flex-start;
     gap: 1.5vw;
-    max-width: 30%;
-    bottom: 20%;
+    max-width: 20%;
+    margin-top: 5%;
+    bottom: 5%;
     left: 10vw;
     animation: fadeIn 5s;
 
@@ -23,7 +24,7 @@
 .header-contents h2{
 
     font-weight: 500px;
-    font-size: max(4.5vw,22px);
+    font-size: max(4.5vw,15px);
     color:white;
     top: 50%;
 }

@@ -8,13 +8,13 @@
 .exploreMenu  h1{
 
     color :bisque;
-    font-weight:900vm;
+    font-weight:700vm;
     
 }
 
 .exploreMenu-text {
 
-    max-width: 90%;
+    max-width: 70%;
     columns: white;
     text-align: left;
     padding: 10px;
@@ -28,10 +28,11 @@
     align-items: center;
     gap:2px;
     text-align: center;
-    margin:20px 0px;
+    margin:10px 0px;
     margin-left: 20px;
     padding: 20px;
-    /* overflow-x: scroll; */
+     overflow-x: scroll; 
+     width: auto;
 }
 
 .exploremenu-list-items img {

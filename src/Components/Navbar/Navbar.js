@@ -109,6 +109,7 @@ return (
             onClick={() => {
               localStorage.removeItem("user");
               setUser(null);
+              navigate("/")
             }}
           >
             Logout
