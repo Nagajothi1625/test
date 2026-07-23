@@ -3,15 +3,15 @@ import './App.css';
 import './Components/Navbar/Navbar.css';
 import Navbar from './Components/Navbar/Navbar';
 import Carousel from './Components/cauroselItems/Carousel';
-import {  Router, Route, Routes, BrowserRouter } from 'react-router-dom';
-import VegItems from './Components/Veg/VegItems';
+import {  Router, Route, Routes } from 'react-router-dom';
+//import VegItems from './Components/Veg/VegItems';
 import LogIn from './Components/Login/Login';
-import Homes from './Components/Home';
+//import Homes from './Components/Home';
 import Cart from './pages/Cart/Cart';
 import Order from './pages/PlaceOrder/PlaceOrder';
-import Header from './Components/Header/Header';
+//import Header from './Components/Header/Header';
 import Explore_menu from './Components/Explore_Menu/Explore_menu';
-import FoodDisplay from './FoodDisplay/FoodDisplay';
+//import FoodDisplay from './FoodDisplay/FoodDisplay';
 import MenuPage from './pages/MenuPage/MenuPage';
 import Home from './pages/Home/Home';
  import Footer from './Components/Footer/Footer';
@@ -23,7 +23,7 @@ import Payment from "./pages/Payment/PaymentPage";
 
 const  App = () => {
   
-  const [showLogin, setShowLogin] = useState(false)
+ // const [showLogin, setShowLogin] = useState(false)
 const [category, setCategory]=useState("All");
 
   return (
